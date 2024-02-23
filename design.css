@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+  }
+
+  header, footer {
+    background: darkolivegreen;
+    height: 12vh;
+  }
+  header, footer, article, nav, aside {
+    padding: .5em;
+  }
+  header, article {
+    text-align: center;
+  }
+  content {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 2.5px;
+  }
