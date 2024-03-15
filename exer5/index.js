@@ -25,8 +25,16 @@ app.post('/add-book', (req, res) => {
 });
 
 app.get('/find-by-isbn-author', (req,res) => {
-    const {isbn,author} = req.query;
-    res.json(isbn,author);
+    const isbn = req.query.isbn;
+    const author = req.query.author;
+
+    res.json({message: `Searching for books with ISBN: ${isbn} Author: ${author}`}); //return ISBN and Author parameters
+});
+
+app.get('/find-by-author', (req,res) => {
+    const author = req.query.author;
+
+    res.json({message: `Searching for books by Author: ${author}`}); //return author search parameter
 });
 
 app.listen(3000, () => { console.log('Server started at port 3000')} );
