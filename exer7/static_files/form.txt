@@ -1,0 +1,23 @@
+document.getElementById('food-form').addEventListener('submit', function (event) {
+    // Validate form inputs
+    // If inputs are valid, create food card and add to the DOM
+    createFoodCard(query.fname, query.desc, query.url, query.rank);
+});
+
+// Function to create food card
+function createFoodCard(name, description, imageURL, rank) {
+    // Create card element and set its innerHTML
+    // Add delete button with event listener
+    // Append card to food-cards section
+    let card = document.getElementById('food-cards').innerHTML
+
+}
+
+// Function to delete food card
+function deleteFoodCard(card) {
+    // Remove card from the DOM
+}
+
+//     // 6. Remove an element
+// const gamesList = document.getElementById("games-list")
+// //gamesList.removeChild(games[2])
