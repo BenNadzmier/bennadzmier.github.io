@@ -10,7 +10,7 @@ export function ItemCard(props){
     }
 
     return (
-        <div class="flex-container">
+        <div class="item-cards">
             {
                 items.map((item) => {
                     return <div className="item-card">
